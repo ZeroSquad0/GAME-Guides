@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- define depth-->
+    <script>
+        const depth = 1;
+    </script>
+
+    <!-- icon -->
+    <link rel="icon" href="../data/images/logo/game_g_logo_1_test.webp" type="image/x-icon">
+    <!-- styling -->
+    <link rel="stylesheet" href="../styles/common_styles.css">
+    <link rel="stylesheet" href="../styles/catalog/catalog_styles.css">
+    <!-- scripts -->
+    <script src="../javascript/error.js"></script>
+    <script src="../javascript/director.js"></script>
+    <script src="../javascript/catalog/catalog_handler.js"></script>
+
+
+    <title>Catalogus</title>
+</head>
+<body>
+    
+
+
+    <header class="header_top_bar">
+
+        <ul>
+            <li>
+                <p onclick="direct_to_page('main', depth)">GAME-G</p>
+            </li>
+            <li>
+                <button id="header_top_bar_button" onclick="direct_to_page('catalog', depth)">Catalogus</button>
+            </li>
+            <li>
+                <button id="header_top_bar_button" onclick="direct_to_page('new_games', depth)">Nieuw</button>
+            </li>
+            <li>
+                <button id="header_top_bar_button" onclick="error_page()">Gidsen</button>
+            </li>
+            <li>
+                <button id="header_top_bar_button" onclick="error_page()">Tips/Tricks</button>
+            </li>
+            <li style="margin-left: auto; margin-right: 10px;">
+                <div class="top_bar_search_bar">
+                    <input type="search" name="test" id="header_top_bar_search" placeholder="search">
+                    <img src="../data/images/search/image_search_icon_3_black.png" alt="search icon" id="" onclick="error_page()">
+                </div>
+            </li>
+        </ul>
+
+    </header>
+
+
+    <article class="catalog_main_container">
+        <div class="catalog_filters">
+            <div class="catalog_filters_games">
+                <p>Games</p>
+                <div class="catalog_check_box">
+                    <input type="checkbox" name="game_sonic_filter" data-filter-type="Game" value="Sonic" onclick="update_catalog_filters()" checked>
+                    <label for="game_sonic_filter">Sonic</label>
+                </div>
+                <div class="catalog_check_box">
+                    <input type="checkbox" name="game_dk_filter" data-filter-type="Game" value="DonkeyKong" onclick="update_catalog_filters()" checked>
+                    <label for="game_dk_filter">Donkey Kong</label>
+                </div>
+                <div class="catalog_check_box">
+                    <input type="checkbox" name="game_mario_filter" data-filter-type="Game" value="Mario" onclick="update_catalog_filters()" checked>
+                    <label for="game_mario_filter">Mario</label>
+                </div>
+                <p>Developer</p>
+                <div class="catalog_check_box">
+                    <input type="checkbox" name="developer_nintendo_filter" data-filter-type="Developer" value="Nintendo" onclick="update_catalog_filters()" checked>
+                    <label for="developer_nintendo_filter">Nintendo</label>
+                </div>
+                <div class="catalog_check_box">
+                    <input type="checkbox" name="developer_sega_filter" data-filter-type="Developer" value="Sega" onclick="update_catalog_filters()" checked>
+                    <label for="developer_sega_filter">Sega</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="catalog_games">
+            <div class="catalog_game" data-game-franchise="Mario" data-game-developer="Nintendo" data-game-name="New Super Mario Bros. 2">
+                <h1>New Super Mario Bros. 2</h1>
+                <img src="../data/images/games/mario/new_nuper_mario_bros_2.jpg" alt="super_mario_bros_2">
+                <p>New Super Mario Bros. 2 is een klassiek platformspel waarin Mario op zoek gaat naar duizenden...</p>
+                <button>Lees meer</button>
+            </div>
+            <div class="catalog_game" data-game-franchise="DonkeyKong" data-game-developer="Nintendo" data-game-name="Donkey Kong 64">
+                <h1>Donkey Kong 64</h1>
+                <img src="../data/images/games/donkey_kong/donkey_kong_64_logo.png" alt="donkey_kong_64">
+
+                <p>Donkey Kong 64 is een episch 3D-platformspel waarin Donkey Kong en zijn vrienden King K. Rool moeten stoppen door...</p>
+                <button onclick="direct_to_blog('donkey_kong_64', depth)">Lees meer</button>
+            </div>
+            <div class="catalog_game" data-game-franchise="Sonic" data-game-developer="Sega" data-game-name="Sonic Speed Simulator">
+                <h1>Sonic Speed Simulator</h1>
+                <img src="../data/images/games/sonic/sonic_speed_simulator_image.webp" alt="sonic_speed_simulator">
+
+                <p>Sonic Speed Simulator is een razendsnelle online waarin je met Sonic en zijn vrienden door...</p>
+                <button onclick="direct_to_blog('sonic_speed_simulator', depth)">Lees meer</button>
+            </div>
+
+
+
+
+        </div>
+
+    </article>
+
+
+</body>
+</html>
