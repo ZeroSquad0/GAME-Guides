@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- define depth-->
+    <script>
+        const depth = 2;
+    </script>
+    <!-- icon -->
+    <link rel="icon" href="../../data/images/logo/game_g_logo_1_test.webp" type="image/x-icon">
+    <!-- styling -->
+    <link rel="stylesheet" href="../../styles/main_styles.css">
+    <link rel="stylesheet" href="../../styles/common_styles.css">
+    <link rel="stylesheet" href="../../styles/blog_styles.css">
+    <!-- scripts -->
+    <script src="../../javascript/director.js"></script>
+
+    <title>Sonic Speed Simualtor</title>
+</head>
+<body>
+    
+    <!-- De "Top bar" -->
+    <header class="header_top_bar">
+
+        <ul>
+            <li>
+                <p onclick="direct_to_page('main', depth)">GAME-G</p>
+            </li>
+
+
+            <li>
+                <button id="header_top_bar_button" onclick="direct_to_page('catalog', depth)">Catalogus</button>
+            </li>
+            <li>
+                <button id="header_top_bar_button" onclick="direct_to_page('new_games', depth)">Nieuw</button>
+            </li>
+            <li>
+                <button id="header_top_bar_button" onclick="direct_to_page('about', depth)">Over Ons</button>
+            </li>
+
+            <li style="margin-left: auto; margin-right: 10px;">
+                <div class="top_bar_search_bar">
+                    <input type="search" name="test" id="header_top_bar_search" placeholder="search">
+                    <img src="../../../../data/images/search/image_search_icon_3_black.png" alt="search icon" id="" onclick="error_page()">
+                </div>
+            </li>
+        </ul>
+
+    </header>
+
+    <!-- Guide -->
+    <article class="blog_main_container">
+        <div class="blog_text_container">
+
+            <p>
+                <br>
+                <br>
+                <a onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><u>Naar boven</u></a>
+            </p>
+
+        </div>
+
+    </article>
+
+
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* Styles van de voor / main pagina*/
+
+.article_top_main {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    background-image: url("../data/images/arcade/nes_remix_wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article_top_main_overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article_top_main_content_container {
+    width: 45%;
+    height: 50%;
+    margin-right: 20vw;
+    margin-bottom: 7.5vw;
+
+    background-color: transparent;
+    color: white;
+}
+
+
+.article_top_main_content_container a {
+    font-weight: bold;
+    font-size: 1.375vw;
+}
+.article_top_main_content_container a:hover {
+    cursor: pointer;
+}
+
+.article_top_main_content_container h1 {
+    font-weight: bolder;
+    font-size: 3.25vw;
+}
+
+.article_top_main_content_container p {
+    font-size: 1.5vw;
+}
+
+.article_listed_games_container {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, black, rgb(50, 50, 50));
+}
+
+.article_listed_games {
+    width: 85%;
+    height: 80%;
+    background-color: gray;
+    border: 2px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, rgb(25, 25, 25), rgb(50, 50, 50), rgb(30, 30, 30));
+    box-shadow: 1px 20px 20px 20px rgba(0, 0, 0, 0.2);
+
+    /* sizing */
+
+    display: inline;
+}
+
+.article_listed_games_title {
+    margin-top: 50px;
+    width: 50%;
+    margin-left: 150px;
+    font-size: 35px;
+    color: white;
+    font-weight: 1000;
+    background-color: transparent;
+}
+
+.article_listed_games_inner_around_container {
+    width: 80%;
+    margin: auto;
+    height: 70%;
+    border: 0;
+    border-radius: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.article_listed_games_inner_container {
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.article_listed_game {
+    width: 30%;
+    height: 100%;
+
+    background-image: linear-gradient(to bottom right, rgb(47, 47, 47), rgb(56, 56, 56));
+
+    border: 0;
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.article_listed_game h1 {
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-right: auto;
+    color: white;
+    font-size: 30px;
+}
+
+.article_listed_game img {
+    margin-top: 10px;
+    width: 200px;
+    height: 115px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.article_listed_game p {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 200px;
+    text-align: left;
+}
+
+.article_listed_game p a {
+    color: inherit;
+}
+
+.article_listed_game a:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,153 @@
+/* Styles van de catalog pagina*/
+
+.catalog_main_container {
+    width: 100%;
+    min-height: 90vw;
+    padding-bottom: 10vw;
+    /*background-image: linear-gradient(to bottom right, black, rgb(59, 59, 59));*/
+    background-color: rgb(25, 25, 25);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+
+.catalog_filters {
+    margin-top: 2.5vw;
+    padding-top: 0.5vw;
+    padding-left: 0.5%;
+    padding-right: 2%;
+    width: 17.5%;
+    height: 40vw;
+    /*background-color: red;*/
+    background-image: linear-gradient(to bottom right, rgb(66, 66, 66), rgb(56, 56, 56));
+    color: white;
+    border: 0;
+    border-radius: 1.5vw;
+
+}
+
+.catalog_filters_games {
+    margin: 0;
+    padding: 0;
+    margin-left: 0.5vw;
+    background-color: transparent;
+}
+
+.catalog_filters_games h1 {
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+.catalog_filters_games p {
+    margin-left: 0.5vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.catalog_check_box {
+    margin-left: 1.25vw;
+}
+
+.catalog_check_box label {
+    font-size: 1.5vw;
+}
+
+.catalog_check_box input[type="checkbox"] {
+    width: 1.25vw;
+    height: 1.25vw;
+}
+
+.catalog_check_box input[type="checkbox"]:checked {
+    accent-color: black;
+}
+
+.catalog_check_box input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.catalog_games {
+    margin-top: 2.5vw;
+    width: 75%;
+    background-color: transparent;
+    border: 0;
+    display: grid;
+    column-gap: 1vw;
+    row-gap: 1vw;
+    grid-template-columns: 23.75% 23.75% 23.75% 23.75%;
+}
+
+.catalog_game {
+    margin: 0;
+    padding: 0;
+    height: 25vw;
+    background-color: black;
+    border: 0;
+    border-radius: 2vw;
+    width: 100%;
+    /*background-image: linear-gradient(to bottom right, rgb(22, 22, 22), rgb(56, 56, 56));*/
+    background-image: linear-gradient(to bottom right, rgb(66, 66, 66), rgb(50, 50, 50));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.catalog_game h1 {
+    width: 80%;
+    margin-top: 2.5vw;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bolder;
+}
+
+.catalog_game p {
+    width: 80%;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    color: white;
+    font-weight: 100 bold;
+}
+
+.catalog_game img {
+    width: 80%;
+    height: 32.5%;
+    margin-top: 1vw;
+    border: 0;
+    border-radius: 1vw;
+}
+
+.catalog_game button {
+    color: rgb(116, 116, 116);
+    margin-top: auto;
+    margin-bottom: 1vw;
+    width: 80%;
+    height: 10%;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    border: 0;
+    background-color: rgb(34, 34, 34);
+    font-weight: bold;
+
+    /* animation */
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+}
+
+.catalog_game button:hover {
+    cursor: pointer;
+
+
+    width: 85%;
+    font-size: 1.75vw;
+    font-weight: bold;
+
+    color: rgb(0, 0, 0);
+    background-color: rgb(75, 75, 75);
+
+    /* animation */
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
+}
