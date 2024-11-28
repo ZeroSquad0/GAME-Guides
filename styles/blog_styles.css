@@ -1,6 +1,8 @@
+/* Styles van de blog pagina*/
+
 .blog_main_container {
     width: 100%;
-    min-height: 80vw;
+    min-height: 40vw;
     /*background-color: yellow;*/
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(75, 75, 75), rgb(24, 24, 24));
     display: flex;
@@ -16,7 +18,7 @@
     height: 100%;
     background-color: black;
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.125vw;
 }
 

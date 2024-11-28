@@ -1,4 +1,7 @@
-
+// Really complex //
+// Wayy to complex to explain
+// It just works
+// dont worry about it
 
 function update_catalog() {
     update_catalog_filters();

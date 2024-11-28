@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- define depth-->
+    <!-- define depth (used for redirecting)-->
     <script>
         const depth = 0;
     </script>
@@ -24,6 +24,7 @@
 </head>
 <body>
 
+    <!-- De "Top bar" -->
     <header class="header_top_bar">
 
         <ul>
@@ -36,25 +37,27 @@
                 <button id="header_top_bar_button" onclick="direct_to_page('catalog', depth)">Catalogus</button>
             </li>
             <li>
-                <button id="header_top_bar_button" onclick="error_page()">Nieuw</button>
+                <button id="header_top_bar_button" onclick="direct_to_page('new_games', depth)">Nieuw</button>
             </li>
             <li>
-                <button id="header_top_bar_button" onclick="error_page()">Gidsen</button>
-            </li>
-            <li>
-                <button id="header_top_bar_button" onclick="error_page()">Tips/Tricks</button>
+                <button id="header_top_bar_button" onclick="direct_to_page('about', depth)">Over Ons</button>
             </li>
 
             <li style="margin-left: auto; margin-right: 10px;">
                 <div class="top_bar_search_bar">
                     <input type="search" name="test" id="header_top_bar_search" placeholder="search">
-                    <img src="data/images/search/image_search_icon_3_black.png" alt="search icon" id="" onclick="error_page()">
+                    <img src="../../data/images/search/image_search_icon_3_black.png" alt="search icon" id="" onclick="error_page()">
                 </div>
             </li>
         </ul>
 
     </header>
 
+    <!--
+    
+        Dit is het eerste wat de gebruikers zien: wat wij doen, wat wij zijn en waar onze website over gaat.
+
+    -->
     <article class="article_top_main">
         <div class="article_top_main_overlay">
             <div class="article_top_main_content_container">
@@ -63,10 +66,18 @@
                     Verken onze gidsen, 
                     verbeter je skills en word de beste in jouw favoriete games!"
                 </p>
+                <a onclick="direct_to_page('catalog', depth)"><u>Catalogus</u></a>
             </div>
         </div>
     </article>
 
+
+    
+    <!--
+    
+    Dit is voor de uitgelichte spellen!
+    
+    -->
     <div class="article_listed_games_container">
         <div class="article_listed_games">
             <div class="article_listed_games_title"><h1>Uitgelicht</h1></div>
@@ -106,7 +117,7 @@
                             New Super Mario Bros. 2 is een klassiek platformspel waarin Mario op zoek gaat naar duizenden munten 
                             en wederom Princess Peach moet...
                             <br> 
-                            <a onclick="direct_to_blog('sonic_speed_simulator', depth)"><u>Lees meer...</u></a>
+                            <a onclick="direct_to_blog('new_super_mario_bros_2', depth)"><u>Lees meer...</u></a>
                         </p>
                     </div>
                 </div>
@@ -114,6 +125,32 @@
         </div>
     </div>
 
+    <!--Footer-->
+    <footer class="footer_container">
+        <div class="footer_innner_box">
+            <div class="footer_inner_box_column">
+                <h1>About</h1>
+                <p>----------------------------------------------</p>
+                <p>
+                    Wij hebben deze website gecreëerd om gamers, jong en oud, 
+                    te ondersteunen en hen te voorzien van waardevolle tips en tricks.
+                </p>
+            </div>
+            <div class="footer_inner_box_column">
+                <h1>Developers</h1>
+                <p>----------------------------------------------</p>
+                <p>SigmaCoder (Tristan)</p>
+                <p>BlackSilence (Aydin)</p>
+            </div>
+            <div class="footer_inner_box_column">
+                <h1>Contact</h1>
+                <p>----------------------------------------------</p>
+                <p>SkibidiToilet@sigma.ohio</p>
+                <p>204666@stmichaelcollehe.nl (Tristan)</p>
+                <p>204458@stmichaelcollehe.nl (Aydin)</p>
+            </div>
+        </div>
+    </footer>
 
 
 

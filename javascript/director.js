@@ -19,6 +19,9 @@ function direct_to_page(page, depth) {
     else if (page == "main") {
         window.location.href = prefix + "index.html"
     }
+    else if (page == "about") {
+        window.location.href = prefix + "pages/about.html"
+    }
     else if (page == "new_games") {
         window.location.href = prefix + "pages/new_games.html"
     }
@@ -31,5 +34,6 @@ function direct_to_blog(blog, depth) {
 }
 
 function error_page(depth) {
-    window.open(generate_path_prefix(depth)+"pages/error.html");
+    let prefix = generate_path_prefix(depth);
+    window.open(prefix+"../pages/error.html");
 }

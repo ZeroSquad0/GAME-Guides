@@ -4,45 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- define depth (used for redirecting)-->
+        <script>
+            const depth = 1;
+        </script>
+    <!-- styling -->
     <link rel="stylesheet" href="../styles/common_styles.css">
-    <link rel="stylesheet" href="../styles/catalog/catalog_styles.css">
+    <link rel="stylesheet" href="../styles/main_styles.css">
 
 
     <script src="../javascript/error.js"></script>
     <script src="../javascript/director.js"></script>
 
 
-    <title>Nieuw</title>
+    <!-- icon -->
+    <link rel="icon" href="../data/images/logo/game_g_logo_1_test.webp" type="image/x-icon">
+    <!-- scripts -->
+    <title>Nieuwe Games</title>
 </head>
 <body>
+
+        <!-- De "Top bar" -->
+        <header class="header_top_bar">
+
+            <ul>
+                <li>
+                    <p onclick="direct_to_page('main', depth)">GAME-G</p>
+                </li>
     
-    <header class="header_top_bar">
+    
+                <li>
+                    <button id="header_top_bar_button" onclick="direct_to_page('catalog', depth)">Catalogus</button>
+                </li>
+                <li>
+                    <button id="header_top_bar_button" onclick="direct_to_page('new', depth)">Nieuw</button>
+                </li>
+                <li>
+                    <button id="header_top_bar_button" onclick="direct_to_page('about', depth)">Over Ons</button>
+                </li>
+    
+                <li style="margin-left: auto; margin-right: 10px;">
+                    <div class="top_bar_search_bar">
+                        <input type="search" name="test" id="header_top_bar_search" placeholder="search">
+                        <img src="../../../../data/images/search/image_search_icon_3_black.png" alt="search icon" id="" onclick="error_page()">
+                    </div>
+                </li>
+            </ul>
+    
+        </header>
 
-        <ul>
-            <li>
-                <p onclick="direct_to_page('main')">GAME-G</p>
-            </li>
-            <li>
-                <button id="header_top_bar_button" onclick="error_page()">Catalogus</button>
-            </li>
-            <li>
-                <button id="header_top_bar_button" onclick="error_page()">Nieuw</button>
-            </li>
-            <li>
-                <button id="header_top_bar_button" onclick="error_page()">Gidsen</button>
-            </li>
-            <li>
-                <button id="header_top_bar_button" onclick="error_page()">Tips/Tricks</button>
-            </li>
-            <li style="margin-left: auto; margin-right: 10px;">
-                <div class="top_bar_search_bar">
-                    <input type="search" name="test" id="header_top_bar_search" placeholder="search">
-                    <img src="../data/images/search/image_search_icon_3_black.png" alt="search icon" id="" onclick="error_page()">
+    <!--
+    
+    De meest Populair Guides!
+    
+    -->
+    <div class="article_listed_games_container">
+        <div class="article_listed_games">
+            <div class="article_listed_games_title"><h1>Meest Populair</h1></div>
+            <div class="article_listed_games_inner_around_container">
+                <div class="article_listed_games_inner_container">
+                    <div class="article_listed_game">
+                        <h1>Donkey Kong 64</h1>
+
+                        <img src="../data/images/games/donkey_kong/donkey_kong_64_logo.png" alt="donkey_kong">
+
+                        <p>
+                            Donkey Kong 64 is een episch 3D-platformspel
+                            waarin Donkey Kong en zijn vrienden King K. Rool moeten stoppen door grote werelden...
+                            <br> 
+                            <a onclick="direct_to_blog('donkey_kong_64', depth)"><u>Lees meer...</u></a>
+                        </p>
+                    </div>
+                    <div class="article_listed_game">
+                        <h1>Sonic Speed Simulator</h1>
+
+                        <img src="../data/images/games/sonic/sonic_speed_simulator_image.webp" alt="sonic">
+
+                        <p>
+                            Sonic Speed Simulator is een razendsnelle online game 
+                            waarin je met Sonic en zijn vrienden door uitgestrekte werelden racet 
+                            en...
+                            <br> 
+                            <a onclick="direct_to_blog('sonic_speed_simulator', depth)"><u>Lees meer...</u></a>
+                        </p>
+                    </div>
+                    <div class="article_listed_game">
+                        <h1>New Super Mario Bros. 2</h1>
+
+                        <img src="../data/images/games/mario/new_nuper_mario_bros_2.jpg" alt="sonic">
+
+                        <p>
+                            New Super Mario Bros. 2 is een klassiek platformspel waarin Mario op zoek gaat naar duizenden munten 
+                            en wederom Princess Peach moet...
+                            <br> 
+                            <a onclick="direct_to_blog('new_super_mario_bros_2', depth)"><u>Lees meer...</u></a>
+                        </p>
+                    </div>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
+    </div>
 
-    </header>
+    <!--
+    
+    De aller aller nieuwste Guides!
+    
+    -->
+    <div class="article_listed_games_container" style="    background-image: linear-gradient(to top left, rgb(25, 25, 25), rgb(50, 50, 50), rgb(30, 30, 30));">
+        <div class="article_listed_games">
+            <div class="article_listed_games_title"><h1>Aller nieuwste</h1></div>
+            <div class="article_listed_games_inner_around_container">
+                <div class="article_listed_games_inner_container">
+                    <div class="article_listed_game">
+                        <h1>Mario Kart 8 Deluxe</h1>
+                        <img src="../data/images/games/mario/mario_kart_8_deluxe.jpg" alt="mario_kart_8_deluxe">
+                        <p>
+                            Mario Kart 8 Deluxe is de ultieme kart-racegame voor de Nintendo Switch...
+                            <br> 
+                            <a onclick="direct_to_blog('mario_kart_8_deluxe', depth)"><u>Lees meer...</u></a>
+                        </p>
+                    </div>
+                    <div class="article_listed_game">                        
+                        <h1>Five Nights at Freddy's</h1>
+                        <img src="../data/images/games/fnaf/fnaf_1.jpg" alt="fnaf_1">
+                        <p>
+                            Five Nights at Freddy's< is een iconisch survival-horrorspel waarin je als nachtbewaker moet...
+                            <br>
+                            <a onclick="direct_to_blog('fnaf_1', depth)"><u>Lees meer...</u></a>
+                        </p>
+                        
+                    </div>
+                    <div class="article_listed_game">
+                        <h1>Library of Ruina</h1>
+                        <img src="../data/images/games/project_moon/library_of_ruina.jpg" alt="library_of_ruina">
+                        <p>
+                            Library of Ruina is een strategisch deckbuilding-spel waarin je als bibliothecaris vecht tegen indringers in een...
+                            <br> 
+                            <a onclick="direct_to_blog('library_of_ruina', depth)"><u>Lees meer...</u></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer_container" style="    background-image: linear-gradient(to top, rgb(40, 40, 40), rgb(0, 0, 0), rgb(40, 40, 40));">
+        <div class="footer_innner_box">
+            <div class="footer_inner_box_column">
+                <h1>About</h1>
+                <p>----------------------------------------------</p>
+                <p>
+                    Wij hebben deze website gecreëerd om gamers, jong en oud, 
+                    te ondersteunen en hen te voorzien van waardevolle tips en tricks.
+                </p>
+            </div>
+            <div class="footer_inner_box_column">
+                <h1>Developers</h1>
+                <p>----------------------------------------------</p>
+                <p>SigmaCoder (Tristan)</p>
+                <p>BlackSilence (Aydin)</p>
+            </div>
+            <div class="footer_inner_box_column">
+                <h1>Contact</h1>
+                <p>----------------------------------------------</p>
+                <p>SkibidiToilet@sigma.ohio</p>
+                <p>204666@stmichaelcollehe.nl (Tristan)</p>
+                <p>204458@stmichaelcollehe.nl (Aydin)</p>
+            </div>
+        </div>
+    </footer>
 
 
 </body>

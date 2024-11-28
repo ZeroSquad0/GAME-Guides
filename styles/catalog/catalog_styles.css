@@ -1,3 +1,5 @@
+/* Styles van de catalog pagina*/
+
 .catalog_main_container {
     width: 100%;
     min-height: 90vw;
@@ -13,7 +15,10 @@
 
 .catalog_filters {
     margin-top: 2.5vw;
-    width: 20%;
+    padding-top: 0.5vw;
+    padding-left: 0.5%;
+    padding-right: 2%;
+    width: 17.5%;
     height: 40vw;
     /*background-color: red;*/
     background-image: linear-gradient(to bottom right, rgb(66, 66, 66), rgb(56, 56, 56));
@@ -30,13 +35,19 @@
     background-color: transparent;
 }
 
+.catalog_filters_games h1 {
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
 .catalog_filters_games p {
-    font-size: 3vw;
+    margin-left: 0.5vw;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 
 .catalog_check_box {
-    margin-left: 1vw;
+    margin-left: 1.25vw;
 }
 
 .catalog_check_box label {

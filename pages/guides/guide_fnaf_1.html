@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- define depth-->
+    <script>
+        const depth = 2;
+    </script>
+    <!-- icon -->
+    <link rel="icon" href="../../data/images/logo/game_g_logo_1_test.webp" type="image/x-icon">
+    <!-- styling -->
+    <link rel="stylesheet" href="../../styles/main_styles.css">
+    <link rel="stylesheet" href="../../styles/common_styles.css">
+    <link rel="stylesheet" href="../../styles/blog_styles.css">
+    <!-- scripts -->
+    <script src="../../javascript/director.js"></script>
+
+    <title>Five Nights at Freddy's 1</title>
+</head>
+<body>
+    
+    <!-- De "Top bar" -->
+    <header class="header_top_bar">
+
+        <ul>
+            <li>
+                <p onclick="direct_to_page('main', depth)">GAME-G</p>
+            </li>
+
+
+            <li>
+                <button id="header_top_bar_button" onclick="direct_to_page('catalog', depth)">Catalogus</button>
+            </li>
+            <li>
+                <button id="header_top_bar_button" onclick="direct_to_page('new_games', depth)">Nieuw</button>
+            </li>
+            <li>
+                <button id="header_top_bar_button" onclick="direct_to_page('about', depth)">Over Ons</button>
+            </li>
+
+            <li style="margin-left: auto; margin-right: 10px;">
+                <div class="top_bar_search_bar">
+                    <input type="search" name="test" id="header_top_bar_search" placeholder="search">
+                    <img src="../../../../data/images/search/image_search_icon_3_black.png" alt="search icon" id="" onclick="error_page()">
+                </div>
+            </li>
+        </ul>
+
+    </header>
+
+    <!-- Guide -->
+    <article class="blog_main_container">
+        <div class="blog_text_container">
+            <h1>Five Nights at Freddy's</h1>
+            <p>
+                <i>Five Nights at Freddy's</i> is een iconisch survival-horrorspel waarin je als nachtbewaker moet overleven in Freddy Fazbear's Pizza.  
+                Je doel? Vijf nachten (en een bonusnacht) overleven terwijl animatronics proberen je te bereiken.  
+                Met beperkte hulpmiddelen en een angstaanjagende sfeer, is dit spel een test van je geduld, strategie en zenuwen.  
+                In deze gids leer je alles wat je moet weten om te overleven.
+            </p>
+            
+            <img src="../../data/images/games/fnaf/fnaf_1.jpg" alt="five_nights_at_freddys">
+            
+            <br>
+            <h2>1. Spelmechanieken</h2>
+            <p>
+                Begrijp de basisprincipes van het spel om een voorsprong te krijgen:
+                <ul>
+                    <li>
+                        <b>Beveiligingscamera's</b>: Gebruik de camera's om de bewegingen van de animatronics te volgen. Pas op dat je niet te lang kijkt, want dit kost stroom.
+                    </li>
+                    <li>
+                        <b>Deuren</b>: Je hebt twee deuren om je kantoor te beschermen. Gebruik ze spaarzaam, want ze gebruiken ook stroom.
+                    </li>
+                    <li>
+                        <b>Stroombeheer</b>: Je hebt een beperkte hoeveelheid stroom per nacht. Wees efficiënt en gebruik alleen wat nodig is.
+                    </li>
+                </ul>
+            </p>
+            
+            <br>
+            <h2>2. De Animatronics</h2>
+            <p>
+                Elk van de animatronics heeft unieke gedragspatronen. Leer hoe je ze kunt voorspellen en ontwijken:
+                <ul>
+                    <li>
+                        <b>Freddy Fazbear</b>: Hij is de gevaarlijkste van allemaal. Hij beweegt traag maar consistent. Houd zijn bewegingen goed in de gaten, vooral later in het spel.
+                    </li>
+                    <li>
+                        <b>Bonnie the Bunny</b>: Hij gebruikt meestal de linker gang. Controleer de linker camera's en sluit de deur als hij te dichtbij komt.
+                    </li>
+                    <li>
+                        <b>Chica the Chicken</b>: Zij gebruikt de rechter gang. Net als bij Bonnie, moet je de camera’s controleren en de deur sluiten als ze in de buurt is.
+                    </li>
+                    <li>
+                        <b>Foxy the Pirate</b>: Hij blijft in Pirate Cove, maar als je hem negeert, zal hij snel naar je kantoor rennen. Controleer regelmatig Pirate Cove om hem op zijn plaats te houden.
+                    </li>
+                </ul>
+            </p>
+            
+            <br>
+            <h2>3. Nachtstrategieën</h2>
+            <p>
+                Elke nacht wordt moeilijker. Hier zijn enkele tips om je kansen op overleven te vergroten:
+                <ul>
+                    <li>
+                        <b>Nacht 1 & 2</b>: Deze nachten zijn relatief rustig. Focus op het leren van de bewegingen van de animatronics en hoe je stroom bespaart.
+                    </li>
+                    <li>
+                        <b>Nacht 3 & 4</b>: De animatronics worden agressiever. Controleer regelmatig de camera's, maar niet te vaak. Wissel tussen Pirate Cove en de gangen.
+                    </li>
+                    <li>
+                        <b>Nacht 5</b>: Dit is de moeilijkste nacht. Beweeg snel en efficiënt. Gebruik de deuren strategisch en blijf kalm.
+                    </li>
+                </ul>
+            </p>
+            
+            <br>
+            <h2>4. Tips voor stroombeheer</h2>
+            <p>
+                Een van de grootste uitdagingen in <i>Five Nights at Freddy's</i> is het beheren van je stroom. Hier zijn enkele tips:
+                <ul>
+                    <li>
+                        <b>Gebruik de camera's spaarzaam</b>: Kijk alleen als het echt nodig is, en focus op de belangrijkste locaties zoals Pirate Cove.
+                    </li>
+                    <li>
+                        <b>Laat deuren niet onnodig gesloten</b>: Sluit deuren alleen als een animatronic dichtbij is.
+                    </li>
+                    <li>
+                        <b>Wees alert, maar niet paranoïde</b>: Blijf kalm en controleer je schermen in een regelmatig patroon.
+                    </li>
+                </ul>
+            </p>
+            
+            <br>
+            <h2>5. Jumpscares voorkomen</h2>
+            <p>
+                Jumpscares zijn het meest iconische en angstaanjagende aspect van het spel. Vermijd ze door:
+                <ul>
+                    <li>
+                        <b>Opletten op geluiden</b>: Let op stappen, vreemde geluiden of het geluid van een deur die opengaat.
+                    </li>
+                    <li>
+                        <b>Snel reageren</b>: Zodra je een animatronic bij de deur ziet, sluit hem onmiddellijk.
+                    </li>
+                    <li>
+                        <b>Pirate Cove controleren</b>: Laat Foxy niet te lang met rust, anders zal hij je overrompelen.
+                    </li>
+                </ul>
+            </p>
+            
+            <br>
+            <h2>6. Extra Nacht (Night 6) en Custom Night</h2>
+            <p>
+                Na de vijf reguliere nachten kun je extra uitdagingen aangaan:
+                <ul>
+                    <li>
+                        <b>Night 6</b>: Een bonusnacht die nog moeilijker is. Gebruik alles wat je hebt geleerd om deze nacht te voltooien.
+                    </li>
+                    <li>
+                        <b>Custom Night</b>: Pas de moeilijkheidsgraad van de animatronics aan. Probeer de ultieme uitdaging met “20/20/20/20 Mode” voor een echte test van je vaardigheden.
+                    </li>
+                </ul>
+            </p>
+            
+            <br>
+            <h2>Conclusie</h2>
+            <p>
+                <i>Five Nights at Freddy's</i> combineert strategie, spanning en horror op een unieke manier.  
+                Door de animatronics te bestuderen, efficiënt stroom te beheren en kalm te blijven onder druk, kun je de nachten overleven.  
+                Of je nu speelt voor de uitdaging of voor de spanning, vergeet niet: blijf gefocust, en laat je niet verrassen!  
+                Veel succes, en... hou de lichten aan.
+            </p>
+            
+            <p>
+                <br>
+                <br>
+                <a onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><u>Naar boven</u></a>
+            </p>
+
+        </div>
+
+    </article>
+
+
+
+</body>
+</html>

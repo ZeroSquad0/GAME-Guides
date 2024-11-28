@@ -23,15 +23,15 @@
     <title>Catalogus</title>
 </head>
 <body>
-    
-
-
+    <!-- Top bar -->
     <header class="header_top_bar">
 
         <ul>
             <li>
                 <p onclick="direct_to_page('main', depth)">GAME-G</p>
             </li>
+
+
             <li>
                 <button id="header_top_bar_button" onclick="direct_to_page('catalog', depth)">Catalogus</button>
             </li>
@@ -39,25 +39,26 @@
                 <button id="header_top_bar_button" onclick="direct_to_page('new_games', depth)">Nieuw</button>
             </li>
             <li>
-                <button id="header_top_bar_button" onclick="error_page()">Gidsen</button>
+                <button id="header_top_bar_button" onclick="direct_to_page('about', depth)">Over Ons</button>
             </li>
-            <li>
-                <button id="header_top_bar_button" onclick="error_page()">Tips/Tricks</button>
-            </li>
+
             <li style="margin-left: auto; margin-right: 10px;">
                 <div class="top_bar_search_bar">
                     <input type="search" name="test" id="header_top_bar_search" placeholder="search">
-                    <img src="../data/images/search/image_search_icon_3_black.png" alt="search icon" id="" onclick="error_page()">
+                    <img src="../../data/images/search/image_search_icon_3_black.png" alt="search icon" id="" onclick="error_page()">
                 </div>
             </li>
         </ul>
 
     </header>
 
-
+    <!-- Magic -->
     <article class="catalog_main_container">
+
+        <!-- Filters-->
         <div class="catalog_filters">
             <div class="catalog_filters_games">
+                <h1>Filters</h1>
                 <p>Games</p>
                 <div class="catalog_check_box">
                     <input type="checkbox" name="game_sonic_filter" data-filter-type="Game" value="Sonic" onclick="update_catalog_filters()" checked>
@@ -71,6 +72,22 @@
                     <input type="checkbox" name="game_mario_filter" data-filter-type="Game" value="Mario" onclick="update_catalog_filters()" checked>
                     <label for="game_mario_filter">Mario</label>
                 </div>
+                <div class="catalog_check_box">
+                    <input type="checkbox" name="game_fnaf_filter" data-filter-type="Game" value="Fnaf" onclick="update_catalog_filters()" checked>
+                    <label for="developer_sega_filter">FNAF</label>
+                </div>
+                <div class="catalog_check_box">
+                    <input type="checkbox" name="game_library_of_ruina_filter" data-filter-type="Game" value="libraryOfRuina" onclick="update_catalog_filters()" checked>
+                    <label for="developer_sega_filter">Library of Ruina</label>
+                </div>
+                <div class="catalog_check_box">
+                    <input type="checkbox" name="game_limbus_company_filter" data-filter-type="Game" value="LimbusCompany" onclick="update_catalog_filters()" checked>
+                    <label for="developer_sega_filter">Limbus Company</label>
+                </div>
+                <div class="catalog_check_box">
+                    <input type="checkbox" name="game_lobotomy_corporation_filter" data-filter-type="Game" value="LobotomyCorporation" onclick="update_catalog_filters()" checked>
+                    <label for="developer_sega_filter">Lobotomy Corporation</label>
+                </div>
                 <p>Developer</p>
                 <div class="catalog_check_box">
                     <input type="checkbox" name="developer_nintendo_filter" data-filter-type="Developer" value="Nintendo" onclick="update_catalog_filters()" checked>
@@ -80,31 +97,97 @@
                     <input type="checkbox" name="developer_sega_filter" data-filter-type="Developer" value="Sega" onclick="update_catalog_filters()" checked>
                     <label for="developer_sega_filter">Sega</label>
                 </div>
+                <div class="catalog_check_box">
+                    <input type="checkbox" name="developer_scott_filter" data-filter-type="Developer" value="Scott" onclick="update_catalog_filters()" checked>
+                    <label for="developer_scott_filter">Scott Cawthon</label>
+                </div>
+                <div class="catalog_check_box">
+                    <input type="checkbox" name="developer_project_moon_filter" data-filter-type="Developer" value="Project Moon" onclick="update_catalog_filters()" checked>
+                    <label for="developer_project_moon_filter">Project Moon</label>
+                </div>
             </div>
 
         </div>
 
+
+        <!-- Game selectie-->
         <div class="catalog_games">
             <div class="catalog_game" data-game-franchise="Mario" data-game-developer="Nintendo" data-game-name="New Super Mario Bros. 2">
                 <h1>New Super Mario Bros. 2</h1>
                 <img src="../data/images/games/mario/new_nuper_mario_bros_2.jpg" alt="super_mario_bros_2">
                 <p>New Super Mario Bros. 2 is een klassiek platformspel waarin Mario op zoek gaat naar duizenden...</p>
-                <button>Lees meer</button>
+                <button onclick="direct_to_blog('new_super_mario_bros_2', depth)">Lees meer</button>
             </div>
+            <div class="catalog_game" data-game-franchise="Mario" data-game-developer="Nintendo" data-game-name="Super Mario Odyssey">
+                <h1>Super Mario Odyssey</h1>
+                <img src="../data/images/games/mario/super_mario_odyssey.jpg" alt="super_mario_oddysey">
+                <p>Super Mario Odyssey is een revolutionair 3D-platformspel waarin Mario samen...</p>
+                <button onclick="direct_to_blog('super_mario_oddysey', depth)">Lees meer</button>
+            </div>
+            <div class="catalog_game" data-game-franchise="Mario" data-game-developer="Nintendo" data-game-name="Mario Kart 8 Deluxe">
+                <h1>Mario Kart 8 Deluxe</h1>
+                <img src="../data/images/games/mario/mario_kart_8_deluxe.jpg" alt="mario_kart_8_deluxe">
+                <p><i>Mario Kart 8 Deluxe</i> is de ultieme kart-racegame voor de Nintendo Switch...</p>
+                <button onclick="direct_to_blog('mario_kart_8_deluxe', depth)">Lees meer</button>
+            </div>
+
+            <div class="catalog_game" data-game-franchise="Fnaf" data-game-developer="Scott" data-game-name="fnaf 1">
+                <h1>Five Nights at Freddy's</h1>
+                <img src="../data/images/games/fnaf/fnaf_1.jpg" alt="fnaf_1">
+                <p>Five Nights at Freddy's< is een iconisch survival-horrorspel waarin je als nachtbewaker moet...</p>
+                <button onclick="direct_to_blog('fnaf_1', depth)">Lees meer</button>
+            </div>
+            <div class="catalog_game" data-game-franchise="Fnaf" data-game-developer="Scott" data-game-name="fnaf 2">
+                <h1>Five Nights at Freddy's 2</h1>
+                <img src="../data/images/games/fnaf/fnaf_2.jpg" alt="fnaf_2">
+                <p>Five Nights at Freddy's 2 brengt nieuwe uitdagingen, een grotere cast van animatronics en een...</p>
+                <button onclick="direct_to_blog('fnaf_2', depth)">Lees meer</button>
+            </div>
+            <div class="catalog_game" data-game-franchise="Fnaf" data-game-developer="Scott" data-game-name="fnaf 3">
+                <h1>Five Nights at Freddy's 3</h1>
+                <img src="../data/images/games/fnaf/fnaf_3.jpg" alt="fnaf_3">
+                <p>Five Nights at Freddy's 3 is de derde game in de beroemde horrorreeks. Dit keer speel je als...</p>
+                <button onclick="direct_to_blog('fnaf_3', depth)">Lees meer</button>
+            </div>
+            <div class="catalog_game" data-game-franchise="Fnaf" data-game-developer="Scott" data-game-name="fnaf 4">
+                <h1>Five Nights at Freddy's 4</h1>
+                <img src="../data/images/games/fnaf/fnaf_4.webp" alt="fnaf_4">
+                <p>Five Nights at Freddy's 4 brengt de horror naar huis en plaatst je in de rol van een kind dat vecht tegen...</p>
+                <button onclick="direct_to_blog('fnaf_4', depth)">Lees meer</button>
+            </div>
+
             <div class="catalog_game" data-game-franchise="DonkeyKong" data-game-developer="Nintendo" data-game-name="Donkey Kong 64">
                 <h1>Donkey Kong 64</h1>
                 <img src="../data/images/games/donkey_kong/donkey_kong_64_logo.png" alt="donkey_kong_64">
-
                 <p>Donkey Kong 64 is een episch 3D-platformspel waarin Donkey Kong en zijn vrienden King K. Rool moeten stoppen door...</p>
                 <button onclick="direct_to_blog('donkey_kong_64', depth)">Lees meer</button>
             </div>
             <div class="catalog_game" data-game-franchise="Sonic" data-game-developer="Sega" data-game-name="Sonic Speed Simulator">
                 <h1>Sonic Speed Simulator</h1>
                 <img src="../data/images/games/sonic/sonic_speed_simulator_image.webp" alt="sonic_speed_simulator">
-
                 <p>Sonic Speed Simulator is een razendsnelle online waarin je met Sonic en zijn vrienden door...</p>
                 <button onclick="direct_to_blog('sonic_speed_simulator', depth)">Lees meer</button>
             </div>
+
+            <div class="catalog_game" data-game-franchise="libraryOfRuina" data-game-developer="Project Moon" data-game-name="Library of Ruina">
+                <h1>Library of Ruina</h1>
+                <img src="../data/images/games/project_moon/library_of_ruina.jpg" alt="library_of_ruina">
+                <p>Library of Ruina is een strategisch deckbuilding-spel waarin je als bibliothecaris vecht tegen indringers in een...</p>
+                <button onclick="direct_to_blog('library_of_ruina', depth)">Lees meer</button>
+            </div>
+            <div class="catalog_game" data-game-franchise="LimbusCompany" data-game-developer="Project Moon" data-game-name="Limbus Company">
+                <h1>Limbus Company</h1>
+                <img src="../data/images/games/project_moon/limbus_company.jpg" alt="limbus_company">
+                <p>Limbus Company is een turn-based RPG met roguelike-elementen, ontwikkeld door de makers van Lobotomy Corporation...</p>
+                <button onclick="direct_to_blog('limbus_company', depth)">Lees meer</button>
+            </div>
+            <div class="catalog_game" data-game-franchise="LobotomyCorporation" data-game-developer="Project Moon" data-game-name="Lobotomy Corporation">
+                <h1>Lobotomy Corporation</h1>
+                <img src="../data/images/games/project_moon/lobotomy_corporation.jpg" alt="limbus_company">
+                <p><i>Lobotomy Corporation</i> is een management-simulatiespel waarin je een geheim bedrijf...</p>
+                <button onclick="direct_to_blog('lobotomy_corporation', depth)">Lees meer</button>
+            </div>
+
 
 
 
@@ -113,6 +196,32 @@
 
     </article>
 
+    <!-- Footer -->
+    <footer class="footer_container">
+        <div class="footer_innner_box">
+            <div class="footer_inner_box_column">
+                <h1>About</h1>
+                <p>----------------------------------------------</p>
+                <p>
+                    Wij hebben deze website gecreëerd om gamers, jong en oud, 
+                    te ondersteunen en hen te voorzien van waardevolle tips en tricks.
+                </p>
+            </div>
+            <div class="footer_inner_box_column">
+                <h1>Developers</h1>
+                <p>----------------------------------------------</p>
+                <p>SigmaCoder (Tristan)</p>
+                <p>BlackSilence (Aydin)</p>
+            </div>
+            <div class="footer_inner_box_column">
+                <h1>Contact</h1>
+                <p>----------------------------------------------</p>
+                <p>SkibidiToilet@gmail.com</p>
+                <p>204666@stmichaelcollehe.nl (Tristan)</p>
+                <p>204458@stmichaelcollehe.nl (Aydin)</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
