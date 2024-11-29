@@ -6,5 +6,7 @@ Game-G staat voor Game-Guides en wij maken allerlij Guides(=Handeidingen) voor g
 Wij hebben de beste tips en tricks voor iedereen. 
 Wij helpen jullie op weg zodat jij de beste ervaring hebt in gemes.
 
+#H# Hoe gebruik je de websites?
+
 
 TBF (=To Be Finished)
