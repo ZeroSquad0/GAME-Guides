@@ -277,3 +277,15 @@ Common styles, deze styles worden in alle pagina's gebruiket bijv. de top bar of
     font-size: 1.25vw;
     margin-top: 0.5vw;
 }
+
+
+.footer_inner_box_column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_inner_box_column a:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
